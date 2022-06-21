@@ -37,11 +37,9 @@ const categorySlice = createSlice({
     initialState,
     reducers: {
         setActiveByCondition(state, action){
-            console.log(action.payload)
             state.categories.map(category => {
                 if(category.condition === action.payload){
                     state.active = category.id
-                    console.log(state.active)
                 }
             })
         }
