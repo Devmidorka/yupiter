@@ -1,9 +1,12 @@
 import React from 'react';
 import Category from "./Category";
 
-const Card = ({image, category, title}) => {
+const Card = ({image, category, title, active, onClick}) => {
     return (
-        <div className={'card'} >
+        <div
+            className={`card ${active ? 'active' : ''}`}
+            onClick={onClick}
+        >
             <img src={image} alt=""/>
             <div className="card__info">
                 <Category category={category} isButton={true}/>

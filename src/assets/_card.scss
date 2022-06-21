@@ -6,6 +6,7 @@
   flex-direction:column;
   justify-content: end;
   align-items: start;
+  border-radius: 6px;
   @media(min-width: 1040px){
     width: 370px;
     height: 415px;
@@ -16,6 +17,7 @@
     height: 100%;
     z-index:-1;
     border-radius: 6px;
+
   }
   .card__info{
     margin:54px 50px;
@@ -26,5 +28,8 @@
       font-weight: 800;
       margin-top: 29px;
     }
+  }
+  &.active{
+    box-shadow: 0 0 3px 3px #4fe24a;
   }
 }
