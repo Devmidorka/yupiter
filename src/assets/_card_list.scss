@@ -1,0 +1,18 @@
+.card__list{
+  display:grid;
+  margin-top: 50px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 80px;
+  justify-items: center;
+  @media(min-width:1040px){
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 75px;
+  }
+  @media(min-width:1235px){
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media(min-width:1700px){
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

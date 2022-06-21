@@ -1,0 +1,33 @@
+.header{
+  background-color: #28293e;
+  padding: 16px 0 75px;
+
+  .header__content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  .header__title{
+    font-size: 72px;
+    letter-spacing: -2px;
+    line-height: 80px;
+    color: #ffffff;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 111px;
+  }
+  .header__info{
+    width: 570px;
+    height: 66px;
+    font-size: 16px;
+    line-height: 32px;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 53px;
+    @media(max-width:1040px){
+      width:90%;
+      min-width:275px;
+    }
+  }
+}
