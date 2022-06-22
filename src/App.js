@@ -10,7 +10,7 @@ const App = () => {
     const cards = useSelector(state => state.cardReducer.cards)
     const dispatch = useDispatch()
     const deleteActiveCards = (e) => {
-        if(e.key === 'Backspace'){
+        if(e.key === 'Delete'){
             dispatch(removeActiveCards())
         }
     }
