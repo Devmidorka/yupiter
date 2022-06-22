@@ -1,5 +1,6 @@
 import React from 'react';
 import Category from "./Category";
+import DeleteButton from "./DeleteButton";
 
 const Card = ({image, category, title, active, onClick}) => {
     return (
@@ -12,6 +13,7 @@ const Card = ({image, category, title, active, onClick}) => {
                 <Category category={category} isButton={true}/>
                 <p>{title}</p>
             </div>
+            <DeleteButton/>
         </div>
     );
 };

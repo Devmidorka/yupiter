@@ -1,3 +1,5 @@
+@import '%button';
+
 .category{
   font-size: 16px;
   line-height: 32px;
@@ -6,14 +8,9 @@
   cursor:pointer;
   user-select:none;
   &.category-button{
-    padding:14px 17px;
-    border-radius: 19px;
-    background-color: #ffffff;
-    display:inline-flex;
-    max-height:38px;
-    justify-content: center;
-    align-items: center;
+    @extend %button;
   }
+
   &.active{
     color: #16cd53;
   }

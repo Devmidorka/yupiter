@@ -32,4 +32,10 @@
   &.active{
     box-shadow: 0 0 3px 3px #4fe24a;
   }
+  .delete-button{
+    position:absolute;
+    right:10px;
+    top:10px;
+    cursor:pointer;
+  }
 }

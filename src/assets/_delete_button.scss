@@ -1,0 +1,6 @@
+@import '%button';
+
+.delete-button{
+  @extend %button;
+}
+
